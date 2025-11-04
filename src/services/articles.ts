@@ -72,7 +72,7 @@ export const articlesService = (): Article[] => {
 				},
 			],
 			cover:
-				'https://www.rikirilis.com/images/administracion-del-conocimiento-en-una-empresa-tecnologica.webp',
+				'https://www.capelix.dev/images/administracion-del-conocimiento-en-una-empresa-tecnologica.webp',
 			description:
 				'En el entorno competitivo de las empresas tecnológicas, la información no es suficiente: lo que realmente marca la diferencia es cómo se transforma en conocimiento útil. Aquí entra en juego la administración del conocimiento, un proceso estratégico que puede ser potenciado mediante los "Sistemas de Información Gerencial" (SIG). Estos sistemas no solo gestionan datos, sino que ayudan a capturar, organizar y distribuir el conocimiento dentro de la organización.',
 			lang: 'es',
@@ -114,7 +114,7 @@ export const articlesService = (): Article[] => {
 					],
 				},
 			],
-			cover: 'https://www.rikirilis.com/images/el-lider-nace-o-se-hace.webp',
+			cover: 'https://www.capelix.dev/images/el-lider-nace-o-se-hace.webp',
 			description:
 				'Esa es una pregunta muy polémica en el mundo que vivimos. Podríamos decir tanto que un líder nace, como que se hace. Para contestar a la cuestión debemos de mirarla desde diferentes perspectivas, ya que de esta manera nos daremos cuenta si el líder nace o se hace en un área específica, no de manera global.',
 			lang: 'es',
@@ -178,7 +178,7 @@ export const articlesService = (): Article[] => {
 					],
 				},
 			],
-			cover: 'https://www.rikirilis.com/images/las-vacas-dan-leche-relato-i.webp',
+			cover: 'https://www.capelix.dev/images/las-vacas-dan-leche-relato-i.webp',
 			description:
 				'Si alguna vez te han hecho esa pregunta y con total obviedad contestas que sí, puede ser que te equivoques. Si buscas una respuesta a tal pregunta, acompáñame en este relato.',
 			lang: 'es',

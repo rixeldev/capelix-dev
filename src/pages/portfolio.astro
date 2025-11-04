@@ -4,7 +4,7 @@ import Experience from '@/components/portfolio/Experience.astro'
 import Projects from '@/components/portfolio/Projects.astro'
 import SectionContainer from '@/components/SectionContainer.astro'
 import type { Preload } from '@/interfaces/preload'
-import { getI18N } from '@/languages/index.ts'
+import { getI18N } from '@/languages/index'
 import Layout from '../layouts/Layout.astro'
 
 const { currentLocale } = Astro
@@ -12,25 +12,25 @@ const i18n = getI18N({ currentLocale })
 const preloadImages: Preload[] = [
 	{
 		as: 'image',
-		href: `https://rikirilis.com/images/page-presentation.avif`,
+		href: `https://capelix.dev/images/page-presentation.avif`,
 		type: 'image/avif',
 		rel: 'preload',
 	},
 	{
 		as: 'image',
-		href: `https://rikirilis.com/images/embedded-img.webp`,
+		href: `https://capelix.dev/images/embedded-img.webp`,
 		type: 'image/webp',
 		rel: 'preload',
 	},
 	{
 		as: 'image',
-		href: `https://rikirilis.com/images/stop-trivia.webp`,
+		href: `https://capelix.dev/images/stop-trivia.webp`,
 		type: 'image/webp',
 		rel: 'preload',
 	},
 	{
 		as: 'image',
-		href: `https://rikirilis.com/images/anjocc-oficial.webp`,
+		href: `https://capelix.dev/images/anjocc-oficial.webp`,
 		type: 'image/webp',
 		rel: 'preload',
 	},
@@ -40,7 +40,7 @@ const preloadImages: Preload[] = [
 <Layout
 	title=`${i18n.ABOUT_TEXT_1} - Rikelvi Capellán`
 	description='I build easy-to-use websites and Android apps, with fast technologies and UX/UI standards to improve user experience.'
-	canonical='https://rikirilis.com/portfolio/'
+	canonical='https://capelix.dev/portfolio/'
 	preload={preloadImages}
 >
 	<SectionContainer id='about'>

@@ -27,15 +27,15 @@ const preloadImages: Preload[] = [
 ---
 
 <Layout
-	title=`${article?.title} - RikiRilis' articles`
+	title=`${article?.title} - Capelix' articles`
 	description=`${article?.description} | Author: ${article?.author} | Tags: ${article?.tags.join(' ')}`
-	canonical=`https://rikirilis.com/articles/${article?.pageTitle}/`
+	canonical=`https://capelix.dev/articles/${article?.pageTitle}/`
 	preload={preloadImages}
 >
 	<img
 		class='parallax absolute top-0 w-full translate-y-0 bg-cover bg-fixed bg-center opacity-5'
 		src={article?.cover}
-		alt=`RikiRilis' article ${article?.title}`
+		alt=`Capelix' article ${article?.title}`
 		style='mask-image: linear-gradient(black 20%, transparent 80%);'
 	/>
 

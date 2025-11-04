@@ -1,5 +1,5 @@
 ---
-import { getI18N } from '@/languages/index.ts'
+import { getI18N } from '@/languages/index'
 import { footerLinks } from '@/libs/consts'
 import Divider from './Divider.astro'
 
@@ -30,12 +30,12 @@ const links = footerLinks()
 			<p
 				class='max-w-md text-pretty text-center text-sm text-slate-600 lg:text-start dark:text-primary'
 			>
-				&#169; 2025 RikiRilis. {i18n.FOOTER_TXT_1}
+				&#169; 2025 Capelix. {i18n.FOOTER_TXT_1}
 				<a
 					rel='noopener noreferrer'
-					href='https://rikirilis.com'
+					href='https://capelix.dev'
 					class='font-bold text-accent transition-colors active:text-slate-700 active:underline sm:hover:text-slate-700 sm:hover:underline dark:active:text-slate-300 dark:sm:hover:text-slate-300'
-					>RikiRilis</a
+					>Capelix</a
 				>
 				(Rikelvi Capellán García) {i18n.FOOTER_TXT_2}
 				<a
@@ -85,7 +85,7 @@ const links = footerLinks()
 			<ul class='flex w-full flex-row items-center justify-center gap-x-2'>
 				<li>
 					<a
-						href='https://rikirilis.com/privacy/'
+						href='https://capelix.dev/privacy/'
 						rel='noopener noreferrer'
 						target='_blank'
 						class='text-sm text-secondary/70 transition-colors hover:text-secondary'
@@ -95,7 +95,7 @@ const links = footerLinks()
 				<li class='text-sm text-secondary/70'>|</li>
 				<li>
 					<a
-						href='https://rikirilis.com/terms/'
+						href='https://capelix.dev/terms/'
 						rel='noopener noreferrer'
 						target='_blank'
 						class='text-sm text-secondary/70 transition-colors hover:text-secondary'>{i18n.TERMS}</a

@@ -1,22 +1,22 @@
-# → RikiRilis' Web | Blog | Portfolio ←
+# → Capelix' Web | Blog | Portfolio ←
 
-<a href="https://github.com/RikiRilis/rikirilis-web">
-  <img src="https://rikirilis.com/images/embedded-img.avif" />
+<a href="https://github.com/Capelix/capelix-dev">
+  <img src="https://capelix.dev/images/embedded-img.avif" />
 </a>
 
-[Visit it →](https://rikirilis.com)
+[Visit it →](https://capelix.dev)
 
 ## 📃 Description →
 
-This repository have the RikiRilis' web, blog and portfolio made with [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and deployed in [Vercel](https://vercel.com/).
+This repository have the Capelix' web, blog and portfolio made with [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and deployed in [Vercel](https://vercel.com/).
 
 ## 🤝 You can use this repository by following the next steps →
 
 1. Clone the repository:
-   `git clone https://github.com/RikiRilis/rikirilis-web.git`
+   `git clone https://github.com/Capelix/capelix-dev.git`
 
 2. Go to the folder project:
-   `cd rikirilis-web`
+   `cd capelix-dev`
 
 3. Install the dependencies:
    `pnpm install`

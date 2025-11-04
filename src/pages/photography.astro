@@ -15,9 +15,9 @@ const images = getImages()
 ---
 
 <Layout
-	title=`${i18n.PHOTOGRAPHY} - RikiRilis`
-	description="The RikiRilis' Website. This is my photography portfolio, where I show some of my best works as a professional photographer and photo editor."
-	canonical='https://rikirilis.com/photography/'
+	title=`${i18n.PHOTOGRAPHY} - Capelix`
+	description="The Capelix' Website. This is my photography portfolio, where I show some of my best works as a professional photographer and photo editor."
+	canonical='https://capelix.dev/photography/'
 >
 	<SectionContainer>
 		<div class='flex w-full max-w-5xl flex-col md:w-11/12 lg:w-8/12'>
@@ -38,14 +38,14 @@ const images = getImages()
 							.sort(() => Math.random() - 0.5)
 							.map((image, index) => (
 								<a
-									href={`https://www.rikirilis.com/${image.src}`}
+									href={`https://www.capelix.dev/${image.src}`}
 									data-pswp-width={image.width}
 									data-pswp-height={image.height}
 									target='_blank'
 									class={`hoverZoomLink group relative mb-4 block cursor-zoom-in break-inside-avoid overflow-hidden rounded-lg transition`}
 								>
 									<LazyImage
-										src={`https://www.rikirilis.com/${image.src}`}
+										src={`https://www.capelix.dev/${image.src}`}
 										alt={`Image ${index + 1}`}
 										width={image.width}
 										height={image.height}

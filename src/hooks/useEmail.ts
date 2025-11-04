@@ -29,8 +29,8 @@ export function useEmail() {
 		}
 
 		if (
-			user_email === 'rikirilis15@gmail.com' ||
-			user_email === 'rikirilis@gmail.com' ||
+			user_email === 'Capelix15@gmail.com' ||
+			user_email === 'Capelix@gmail.com' ||
 			user_email === 'thewhitzip@gmail.com' ||
 			user_email === 'rikelvicapellan15@gmail.com' ||
 			user_email === 'rrgnetflix@gmail.com'

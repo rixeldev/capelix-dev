@@ -12,7 +12,7 @@ export async function POST({ request }: { request: Request }) {
 	const { user_name, user_email, message }: RequestBody = await request.json()
 
 	const { data, error } = await resend.emails.send({
-		from: 'contact@rikirilis.com',
+		from: 'contact@capelix.dev',
 		to: ['rikelvicapellan15@gmail.com'],
 		subject: 'Message from website',
 		html: `
@@ -52,8 +52,8 @@ export async function POST({ request }: { request: Request }) {
 							</td>
 							<td align="right" style="vertical-align:middle; height: 100%; display: flex; justify-content: center; align-items: center;">
 								<div style="background:rgba(255,255,255,0.12); display: flex; justify-content: center; align-items: center; flex-direction: row; gap: .5rem; padding:8px; border-radius:8px; color:#fff; font-weight:700; font-size:13px;">
-									<img src="https://rikirilis.com/logo.svg" style="width: 2rem;">
-								RikiRilis
+									<img src="https://capelix.dev/logo.svg" style="width: 2rem;">
+								Capelix
 								</div>
 							</td>
 							</tr>
@@ -125,9 +125,9 @@ export async function POST({ request }: { request: Request }) {
 					<!-- Footer -->
 					<tr>
 						<td style="background:#020617; color:#cbd5e1; padding:16px 22px; text-align:center; font-size:12px;">
-						<div style="margin-bottom:6px;">RikiRilis — Contact</div>
+						<div style="margin-bottom:6px;">Capelix — Contact</div>
 						<div style="opacity:0.85;">El Pino • La Vega • Republica Dominicana</div>
-						<div style="margin-top:8px; font-size:11px; opacity:0.75;">&copy; <span id="year">2025</span> RikiRilis. All rights reserved.</div>
+						<div style="margin-top:8px; font-size:11px; opacity:0.75;">&copy; <span id="year">2025</span> Capelix. All rights reserved.</div>
 						</td>
 					</tr>
 					</table>

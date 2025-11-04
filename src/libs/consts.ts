@@ -13,11 +13,11 @@ import { getI18N } from '@/languages/index'
 export const footerLinks = (): FooterLink[] => {
 	return [
 		{
-			href: 'https://github.com/RikiRilis',
+			href: 'https://github.com/Capelix',
 			icon: GitHub,
 		},
 		{
-			href: 'https://instagram.com/rikirilis',
+			href: 'https://instagram.com/Capelix',
 			icon: Instagram,
 		},
 		{
