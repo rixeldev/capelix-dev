@@ -42,15 +42,16 @@ const images = getImages()
 									data-pswp-width={image.width}
 									data-pswp-height={image.height}
 									target='_blank'
-									class={`hoverZoomLink group relative mb-4 block cursor-zoom-in break-inside-avoid overflow-hidden rounded-lg transition`}
+									class={`hoverZoomLink group relative mb-4 block cursor-zoom-in break-inside-avoid overflow-hidden rounded-lg transition-all duration-300 ease-in-out md:hover:shadow-lg md:hover:shadow-accent/20 md:hover:scale-[1.02]`}
 								>
 									<LazyImage
 										src={`https://www.capelix.dev/${image.src}`}
 										alt={`Image ${index + 1}`}
 										width={image.width}
 										height={image.height}
-										className='w-full group-active:scale-105 md:group-hover:scale-105 duration-[.4s] transition opacity-0 ease-in-out'
+										className='w-full group-active:scale-105 md:group-hover:scale-110 duration-[.4s] transition-all opacity-0 ease-in-out md:group-hover:brightness-110'
 									/>
+									<div class='absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 transition-opacity duration-300 md:group-hover:opacity-100' />
 
 									<Loading class='absolute inset-0 -z-20 m-auto size-6 text-slate-200' />
 								</a>
