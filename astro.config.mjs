@@ -39,5 +39,8 @@ export default defineConfig({
 			'import.meta.env.ADMIN_SESSION_SECRET': JSON.stringify(process.env.ADMIN_SESSION_SECRET),
 			'import.meta.env.PIN_HASH_SECRET': JSON.stringify(process.env.PIN_HASH_SECRET),
 		},
+		resolve: {
+			dedupe: ['react', 'react-dom'],
+		},
 	},
 })
