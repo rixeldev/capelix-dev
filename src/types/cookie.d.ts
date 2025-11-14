@@ -1,4 +1,4 @@
-declare module 'cookie' {
+declare module "cookie" {
 	interface CookieParseOptions {
 		decode?(value: string): string
 	}
@@ -10,7 +10,7 @@ declare module 'cookie' {
 		expires?: Date
 		httpOnly?: boolean
 		secure?: boolean
-		sameSite?: true | false | 'lax' | 'strict' | 'none'
+		sameSite?: true | false | "lax" | "strict" | "none"
 		encode?(value: string): string
 	}
 
@@ -19,4 +19,3 @@ declare module 'cookie' {
 
 	export { parse, serialize, CookieParseOptions, CookieSerializeOptions }
 }
-
