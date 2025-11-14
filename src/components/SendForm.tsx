@@ -1,4 +1,4 @@
-import { getI18N, normalizeLocale } from "@/languages/index"
+import { getI18N, normalizeLocale } from "@/locales/index"
 import { useEmail } from "@/hooks/useEmail"
 import { useMemo, useRef } from "react"
 import { Loading } from "@/icons/Loading"

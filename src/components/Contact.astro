@@ -4,7 +4,7 @@ import { SendForm } from "@/components/SendForm"
 import Chat from "@/icons/Chat.astro"
 import Check from "@/icons/Check.astro"
 import Copy from "@/icons/Copy.astro"
-import { getActiveLocale, getI18N } from "@/languages/index.ts"
+import { getActiveLocale, getI18N } from "@/locales/index.ts"
 
 const email: string = "rikelvicapellan15@gmail.com"
 interface Props {
@@ -71,8 +71,8 @@ const i18n = getI18N({ currentLocale: locale })
 </div>
 
 <script>
-	import { getI18N } from "@/languages/index"
 	import { $ } from "@/libs/dom-selector.ts"
+	import { getI18N } from "@/locales/index"
 
 	document.addEventListener("astro:page-load", () => {
 		const copyEmailIcon = $("#copyEmailIcon")

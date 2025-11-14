@@ -1,8 +1,8 @@
 ---
 import SectionContainer from "@/components/SectionContainer.astro"
 import type { Preload } from "@/interfaces/preload"
-import { getActiveLocale, getI18N, resolveLocalizedPath } from "@/languages/index"
 import Layout from "@/layouts/Layout.astro"
+import { getActiveLocale, getI18N, resolveLocalizedPath } from "@/locales/index"
 import { articlesService } from "@/services/articles"
 
 const { id } = Astro.params
@@ -18,10 +18,10 @@ if (!article || article === undefined) {
 
 const preloadImages: Preload[] = [
 	{
-		as: 'image',
+		as: "image",
 		href: article.cover,
-		type: 'image/webp',
-		rel: 'preload',
+		type: "image/webp",
+		rel: "preload",
 	},
 ]
 ---
@@ -31,22 +31,22 @@ const preloadImages: Preload[] = [
 	description={`${article?.description} | ${i18n.AUTHOR}: ${article?.author} | ${i18n.LANGUAGE}: ${article?.lang}`}
 	canonical={new URL(
 		resolveLocalizedPath(`/articles/${article?.pageTitle}/`, locale),
-		'https://capelix.dev',
+		"https://capelix.dev"
 	).toString()}
 	preload={preloadImages}
 >
 	<img
-		class='parallax absolute top-0 w-full translate-y-0 bg-cover bg-fixed bg-center opacity-5'
+		class="parallax absolute top-0 w-full translate-y-0 bg-cover bg-fixed bg-center opacity-5"
 		src={article?.cover}
 		alt={`Capelix' article ${article?.title}`}
-		style='mask-image: linear-gradient(black 20%, transparent 80%);'
+		style="mask-image: linear-gradient(black 20%, transparent 80%);"
 	/>
 
 	<SectionContainer>
-		<div class='flex w-full max-w-4xl flex-col sm:w-11/12 md:w-8/12'>
+		<div class="flex w-full max-w-4xl flex-col sm:w-11/12 md:w-8/12">
 			<header>
 				<h2
-					class='text-xl font-extrabold text-accent sm:text-3xl'
+					class="text-xl font-extrabold text-accent sm:text-3xl"
 					transition:name={`article-${article?.pageTitle}-title`}
 				>
 					{article?.title}
@@ -54,18 +54,18 @@ const preloadImages: Preload[] = [
 			</header>
 
 			<div
-				class='mt-8 flex w-full flex-col gap-8'
+				class="mt-8 flex w-full flex-col gap-8"
 				transition:name={`article-${article?.pageTitle}-content`}
 			>
 				{
 					article?.content.map((section) => (
-						<div class='flex flex-col gap-2'>
-							<h1 class='text-xl font-bold text-primary'>{section.title}</h1>
+						<div class="flex flex-col gap-2">
+							<h1 class="text-xl font-bold text-primary">{section.title}</h1>
 
-							<div id='articles-paragraphs' class='flex flex-col gap-4'>
+							<div id="articles-paragraphs" class="flex flex-col gap-4">
 								{section.paragraphs.map((paragraph) => (
 									<p
-										class={`${paragraph.startsWith('"') && paragraph.endsWith('"') ? 'text-right' : 'text-left'} text-pretty text-primary/80`}
+										class={`${paragraph.startsWith('"') && paragraph.endsWith('"') ? "text-right" : "text-left"} text-pretty text-primary/80`}
 									>
 										{paragraph}
 									</p>
@@ -77,7 +77,7 @@ const preloadImages: Preload[] = [
 			</div>
 
 			<footer
-				class='mt-8 flex w-full flex-col items-end justify-center text-xs italic text-secondary'
+				class="mt-8 flex w-full flex-col items-end justify-center text-xs italic text-secondary"
 			>
 				<span>
 					{article?.timestamp}
@@ -92,10 +92,10 @@ const preloadImages: Preload[] = [
 </Layout>
 
 <script>
-	import { $, $$ } from '@/libs/dom-selector'
+	import { $, $$ } from "@/libs/dom-selector"
 
-	document.addEventListener('astro:page-load', () => {
-		const paragraphs = $$('#articles-paragraphs p')
+	document.addEventListener("astro:page-load", () => {
+		const paragraphs = $$("#articles-paragraphs p")
 
 		paragraphs.forEach((paragraph) => {
 			var text = paragraph.innerHTML
@@ -103,8 +103,8 @@ const preloadImages: Preload[] = [
 			paragraph.innerHTML = textItalic
 		})
 
-		window.addEventListener('scroll', () => {
-			const parallax = $('.parallax')
+		window.addEventListener("scroll", () => {
+			const parallax = $(".parallax")
 			const offset = window.scrollY
 			if (parallax) parallax.style.transform = `translateY(${offset * 0.5}px)`
 		})

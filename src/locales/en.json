@@ -59,6 +59,7 @@
   "STOPT_TRIVIA_DESCRIPTION": "This is the mythical game of 'STOP!'. Made with realtime game experience and easy-to-play. Play Stop Trivia in you Android phone.",
   "ANJOCC_OFICIAL_DESCRIPTION": "The oficial website for ANJOCC (Asociación Nacional de Jóvenes Candeleros de Cristo) from Dominican Republic, with an user loggin, registration form, Supabase DB and more...",
   "GDN_STYLE_DESCRIPTION": "The official website of the prestigious GDN Pro style platform. Manage your clients, stylists, barbers, spa services and independent individuals.",
+  "GDN_PRO_DESCRIPTION": "GDN Pro is a platform where freelance developers and clients looking for workers meet and reach corporate agreements. At GDN PRO we create innovative digital solutions. World-class web development, mobile apps and digital marketing.",
   "ADD_STORY": "Add story",
   "ADMIN": "Administrator",
   "PRIVACY": "Privacy Policy",
@@ -181,5 +182,6 @@
   "PROJECT_FIRE_RESERVATIONS_ALT": "Fire Reservations website preview",
   "PROJECT_STOP_TRIVIA_ALT": "Stop Trivia Android game preview",
   "PROJECT_ANJOCC_ALT": "ANJOCC official website preview",
-  "PROJECT_GDN_STYLE_ALT": "GDN Style official website preview"
+  "PROJECT_GDN_STYLE_ALT": "GDN Style official website preview",
+  "PROJECT_GDN_PRO_ALT": "GDN Pro official website preview"
 }

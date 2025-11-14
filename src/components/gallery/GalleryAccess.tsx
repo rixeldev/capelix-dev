@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from "react"
 import { createPortal } from "react-dom"
-import { getI18N, normalizeLocale } from "@/languages/index"
+import { getI18N, normalizeLocale } from "@/locales/index"
 
 interface GalleryInfo {
 	id: string

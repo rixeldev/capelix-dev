@@ -1,25 +1,25 @@
 ---
-import Divider from '@/components/Divider.astro'
-import ProjectsCard from '@/components/ProjectsCard.astro'
-import Code from '@/icons/Code.astro'
-import { type Project } from '@/interfaces/project'
-import { getI18N } from '@/languages/index.ts'
-import { projectsService } from '@/services/projects'
-import MainTitle from '../MainTitle.astro'
-import ProjectsTecnologies from './ProjectsTecnologies.astro'
+import Divider from "@/components/Divider.astro"
+import ProjectsCard from "@/components/ProjectsCard.astro"
+import Code from "@/icons/Code.astro"
+import { type Project } from "@/interfaces/project"
+import { getI18N } from "@/locales/index.ts"
+import { projectsService } from "@/services/projects"
+import MainTitle from "../MainTitle.astro"
+import ProjectsTecnologies from "./ProjectsTecnologies.astro"
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 const allProjects: Project[] = projectsService(currentLocale).slice(0, 4)
 ---
 
-<div class='flex w-full max-w-4xl flex-col sm:w-11/12 md:w-8/12'>
+<div class="flex w-full max-w-4xl flex-col sm:w-11/12 md:w-8/12">
 	<MainTitle>
-		<Code class='size-8' />
+		<Code class="size-8" />
 		{i18n.PROJECTS}
 	</MainTitle>
 
-	<div class='text- flex flex-col gap-y-16'>
+	<div class="text- flex flex-col gap-y-16">
 		{
 			allProjects.map(({ title, description, imgUrl, projectUrl, tags, gitCodeUrl, alt }) => (
 				<ProjectsCard

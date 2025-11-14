@@ -1,6 +1,6 @@
 ---
-import { getActiveLocale, getI18N, resolveLocalizedPath } from "@/languages/index"
 import Layout from "@/layouts/Layout.astro"
+import { getActiveLocale, getI18N, resolveLocalizedPath } from "@/locales/index"
 
 const locale = getActiveLocale(Astro)
 const i18n = getI18N({ currentLocale: locale })

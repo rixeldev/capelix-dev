@@ -1,55 +1,55 @@
 ---
-import MainTitle from '@/components/MainTitle.astro'
-import User from '@/icons/User.astro'
-import { getI18N } from '@/languages/index'
+import MainTitle from "@/components/MainTitle.astro"
+import User from "@/icons/User.astro"
+import { getI18N } from "@/locales/index"
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
 ---
 
-<div class='flex w-full max-w-4xl flex-col sm:w-11/12 md:w-8/12'>
+<div class="flex w-full max-w-4xl flex-col sm:w-11/12 md:w-8/12">
 	<MainTitle>
-		<User class='size-8' />
+		<User class="size-8" />
 		{i18n.ABOUT_ME}
 	</MainTitle>
 
 	<div
-		class='flex w-full flex-col-reverse items-center justify-between gap-6 lg:flex-row lg:items-center'
+		class="flex w-full flex-col-reverse items-center justify-between gap-6 lg:flex-row lg:items-center"
 	>
-		<div class='flex flex-col gap-4 text-pretty font-ubuntu text-base sm:text-lg'>
-			<p class='text-primary'>
+		<div class="flex flex-col gap-4 text-pretty font-ubuntu text-base sm:text-lg">
+			<p class="text-primary">
 				{i18n.ABOUT_ME_TEXT_1}
-				<strong class='text-accent'>Capelix</strong>
+				<strong class="text-accent">Capelix</strong>
 				{i18n.ABOUT_ME_TEXT_2}
 			</p>
 
-			<p class='text-primary'>
+			<p class="text-primary">
 				{i18n.ABOUT_ME_TEXT_3}
-				<strong class='text-accent'>{i18n.ABOUT_ME_TEXT_4}</strong>, <strong class='text-accent'
+				<strong class="text-accent">{i18n.ABOUT_ME_TEXT_4}</strong>, <strong class="text-accent"
 					>{i18n.ABOUT_ME_TEXT_5}</strong
 				>
 				{i18n.ABOUT_ME_TEXT_6}
 			</p>
 
-			<p class='text-primary'>
+			<p class="text-primary">
 				{i18n.ABOUT_ME_TEXT_7}
-				'<strong class='text-accent'>STOP!</strong>'
+				'<strong class="text-accent">STOP!</strong>'
 				{i18n.ABOUT_ME_TEXT_8}
-				<strong class='text-accent'>{i18n.ABOUT_ME_TEXT_9}</strong>. {i18n.ABOUT_ME_TEXT_10}
-				<strong class='text-accent'>{i18n.ABOUT_ME_TEXT_11}</strong>, <strong class='text-accent'
+				<strong class="text-accent">{i18n.ABOUT_ME_TEXT_9}</strong>. {i18n.ABOUT_ME_TEXT_10}
+				<strong class="text-accent">{i18n.ABOUT_ME_TEXT_11}</strong>, <strong class="text-accent"
 					>{i18n.ABOUT_ME_TEXT_12}</strong
 				>
 				{i18n.ABOUT_ME_TEXT_13}
-				<strong class='text-accent'>{i18n.ABOUT_ME_TEXT_14}</strong>
+				<strong class="text-accent">{i18n.ABOUT_ME_TEXT_14}</strong>
 				{i18n.ABOUT_ME_TEXT_15}
 			</p>
 		</div>
 
 		<img
-			src='https://capelix.dev/images/about-image.webp'
-			width='720'
-			height='1280'
-			class='aspect-square h-full w-48 rotate-6 rounded-3xl bg-slate-800 object-cover p-1 shadow-lg shadow-black/60 transition-all ease-in-out hover:rotate-12 hover:shadow-2xl hover:shadow-accent/20 sm:hover:scale-105 md:w-64 md:p-2'
+			src="https://capelix.dev/images/about-image.webp"
+			width="720"
+			height="1280"
+			class="aspect-square h-full w-48 rotate-6 rounded-3xl bg-slate-800 object-cover p-1 shadow-lg shadow-black/60 transition-all ease-in-out hover:rotate-12 hover:shadow-2xl hover:shadow-accent/20 sm:hover:scale-105 md:w-64 md:p-2"
 			alt="About Capelix' image, Rikelvi Capellán"
 		/>
 	</div>
