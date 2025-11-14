@@ -69,7 +69,7 @@ const images = getImages()
 	import { $ } from "@/libs/dom-selector"
 	import PhotoSwipeLightbox from "photoswipe/lightbox"
 
-	document.addEventListener("astro:page-load", () => {
+	document.addEventListener("DOMContentLoaded", () => {
 		const lightbox = new PhotoSwipeLightbox({
 			gallery: "#gallery",
 			children: "a",
